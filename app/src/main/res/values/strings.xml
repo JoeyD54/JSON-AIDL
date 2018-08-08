@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GM Test</string>
+    <string name="bind_button">AIDL BIND</string>
+    <string name="unbind_button">AIDL UNBIND</string>
+    <string name="remote_service_disconnected">Remote Service Disconnected.</string>
+    <string name="remote_service_connected">Remote Service Connected</string>
+    <string name="parse_data">Parse Data</string>
+</resources>
