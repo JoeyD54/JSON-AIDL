@@ -20,10 +20,9 @@ public class MainActivity extends AppCompatActivity {
     IRemoteService myIRemoteService = null;
     TextView isConnected, logDisplay, cityText, temperatureText;
     Button bindButton, unbindButton, getData;
-    String city = "", temperature = "";
-    String splitCityTemp = "";
     String serviceMessage = "", serviceJSON = "";
 
+    //Placeholder JSON to test AIDL functionality. Using one known API to help testing.
     String condUrl = "http://api.wunderground.com/api/90645b02d360fe14/conditions/q/Michigan/Detroit.json";
 
     @Override
@@ -124,26 +123,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "getMessage failed.",
                             Toast.LENGTH_SHORT).show();
                 }
-               /* try{
-                    JSONObject obj = new JSONObject(serviceJSON);
-                    parseJSON(obj);
-                } catch (JSONException e){
-                    Log.e(TAG, "Could not parse String from AIDL back into OBJ");
-                }*/
 
                 isConnected.setText(serviceMessage);
             }
         }
     };
-
-    //***********************************************************************************
-    // Function: parseJSON
-    // Purpose: Get JSONobj from parse AIDL. Parse the JSON to print data.
-    // Arguments: JSONobj
-    // Returns: None
-    //***********************************************************************************
-    private void parseJSON(String JSONobj){
-        //String city = "", temperature;
-
-    }
 }

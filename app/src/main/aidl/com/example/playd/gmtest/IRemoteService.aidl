@@ -4,7 +4,7 @@ package com.example.playd.gmtest;
 // Declare any non-default types here with import statements
 
 interface IRemoteService {
-    //TEST PRINT
+    //Print message to show proper connection.
     String getMessage();
 
     //JSON call to receive data from API. Convert JSONObj to String on return.
